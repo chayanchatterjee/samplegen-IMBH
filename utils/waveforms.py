@@ -232,7 +232,7 @@ def get_waveform(static_arguments,
         
         if 'mtotal' in waveform_params:
             
-            config_file_path = '/home/chattec/samplegen/config_files/waveform_params_IMBH.ini'
+            config_file_path = '/home/chattec/samplegen-IMBH/config_files/waveform_params_IMBH.ini'
             config_file = WorkflowConfigParser(configFiles=[config_file_path])
             trans = read_transforms_from_config(config_file,section="waveform_transforms")
 
@@ -262,13 +262,13 @@ def get_waveform(static_arguments,
 #                                   f_ref=static_arguments['f_ref'],
                                    inclination=waveform_params['inclination'],
                                    
-#                                   #### For sampling over M_total and q #####
-#                                   mass1=mass1,
-#                                   mass2=mass2,
-#                                   #########################################
+                                   #### For sampling over M_total and q #####
+                                   mass1=mass1,
+                                   mass2=mass2,
+                                   #########################################
                                    
-                                   mass1=waveform_params['mass1'],
-                                   mass2=waveform_params['mass2'],
+#                                   mass1=waveform_params['mass1'],
+#                                   mass2=waveform_params['mass2'],
                                    
                                    spin1x=spin1x,
                                    spin2x=spin2x,
